@@ -73,3 +73,37 @@ pandas, numpy, matplotlib, seaborn
 
 ### Output
 - Madhuri_Task2_RetailSalesEDA.png — EDA dashboard
+
+- ---
+
+## Task 3: Customer Segmentation Analysis
+
+### Objective
+Group customers into distinct segments using K-Means clustering
+based on Annual Income and Spending Score.
+
+### Dataset
+Mall Customers Dataset — Kaggle
+(vjchoudhary7/customer-segmentation-tutorial-in-python)
+
+### Steps Performed
+- Data cleaning and preprocessing
+- Gender encoding
+- Feature scaling using StandardScaler
+- Optimal K selection using Elbow Method + Silhouette Score
+- K-Means clustering with K=5
+- Cluster profiling and labeling
+- 12-plot visualization dashboard
+
+### Key Findings
+- 5 distinct customer segments identified
+- VIP customers: High Income + High Spending
+- Budget customers: Low Income + Low Spending
+- Potential targets: High Income + Low Spending
+- Loyal risk group: Low Income + High Spending
+
+### Libraries Used
+pandas, numpy, matplotlib, seaborn, scikit-learn
+
+### Output
+- Madhuri_Task3_CustomerSegmentation.png — segmentation dashboard
