@@ -107,3 +107,110 @@ pandas, numpy, matplotlib, seaborn, scikit-learn
 
 ### Output
 - Madhuri_Task3_CustomerSegmentation.png — segmentation dashboard
+ ## Task 4: Sentiment Analysis
+
+### Objective
+Develop a sentiment analysis model to
+accurately classify text data as Positive,
+Negative or Neutral, providing valuable
+insights into public opinion and customer
+feedback.
+
+### Dataset
+Twitter Entity Sentiment Analysis — Kaggle
+- twitter_training.csv
+- twitter_validation.csv
+
+### Steps Performed
+- Loaded and merged training + validation data
+- Cleaned tweet text:
+  - Removed URLs, mentions, hashtags
+  - Removed special characters and numbers
+  - Converted to lowercase
+- Extracted word count feature
+- Built word frequency analysis
+- Applied TF-IDF Vectorization (bigrams)
+- Trained and compared 2 ML models
+- Generated Word Clouds for each sentiment
+- Built 12-plot visualization dashboard
+
+### Models Used
+- Multinomial Naive Bayes
+- Linear Support Vector Classifier (SVC)
+
+### Key Findings
+- Linear SVC outperforms Naive Bayes
+- Most tweets showed Positive sentiment
+- Identified top positive and negative words
+- Word clouds revealed key sentiment drivers
+- Analyzed sentiment patterns across brands
+
+### Visualizations
+- Overall sentiment distribution
+- Sentiment % by brand (Stacked bar)
+- Word Clouds (Positive, Negative, Neutral)
+- Top 15 Positive and Negative words
+- Tweet length by sentiment (Boxplot)
+- Top 10 brands by tweet volume
+- Model accuracy comparison
+- Confusion matrix
+
+### Libraries Used
+pandas, numpy, matplotlib, seaborn,
+scikit-learn, nltk, wordcloud
+
+### Output
+- Madhuri_Task4_SentimentAnalysis.png
+## Task 5: House Price Prediction
+
+### Objective
+Build a predictive model using Linear
+Regression to estimate house prices based
+on relevant features like area, bedrooms,
+and other property characteristics.
+
+### Dataset
+Housing Prices Dataset — Kaggle
+(yasserh/housing-prices-dataset)
+
+### Steps Performed
+- Data cleaning and preprocessing
+- Label encoding of categorical columns
+- Feature scaling using StandardScaler
+- Train/test split (80/20)
+- Trained 3 regression models
+- Evaluated using R², RMSE, MAE
+- 5-Fold Cross Validation
+- Feature importance analysis
+- Built 12-plot visualization dashboard
+
+### Models Used
+- Linear Regression
+- Ridge Regression (alpha=1.0)
+- Lasso Regression (alpha=1.0)
+
+### Key Findings
+- Area is the strongest price predictor
+- More bedrooms generally means higher price
+- All 3 models perform similarly
+- Ridge and Lasso help reduce overfitting
+- 5-Fold CV confirms model consistency
+
+### Visualizations
+- Price distribution histogram
+- Correlation heatmap
+- Feature importance bar chart
+- Actual vs Predicted (all 3 models)
+- Residual plot
+- Model R² comparison
+- RMSE comparison
+- Price vs Area scatter plot
+- Price by bedrooms boxplot
+- Cross validation scores
+
+### Libraries Used
+pandas, numpy, matplotlib, seaborn,
+scikit-learn
+
+### Output
+- Madhuri_Task5_HousePricePrediction.png
